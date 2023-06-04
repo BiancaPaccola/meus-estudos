@@ -253,4 +253,31 @@ public class Main
         
         return "Dados informados: " + dados;
     }
+
+        //recebe dois arrays de inteiros como argumentos (parâmetro). Execute a soma destes, 
+        //elemento a elemento, e coloque em um outro array. O método deve retornar este array com 
+        //a soma. Caso os dois arrays recebidos não tenham o mesmo tamanho, retorne null.
+    public static int[] exercicio17(int r[], int rr[]) {
+        if(r.length != rr.length)
+            return null;
+        int[] arraySomado = new int[r.length];
+        for(int i = 0; i < r.length; i++)
+            arraySomado[i] = r[i] + rr[i];
+            
+        return arraySomado;
+    }
+
+        // Crie um método que inicializa um array de inteiros com tamanho aleatório entre 1 e 100. 
+        //Inicialize todos os elementos do array também com valores aleatórios entre 1 e 1000. 
+        // No final, imprima o tamanho do array e todos os elementos do array em uma mesma linha, separados por um hífen.
+    public static void exrcicio18() {
+        int[] arr = new int[ (int)( Math.random() * 100) + 1 ];
+        for(int i = 0; i < arr.length; i++)
+            arr[i] = ( (int)( Math.random() * 1000) +1 );
+            
+        System.out.println("Tamanho do array: " + arr.length);
+        System.out.println("Elementos do array: \n");
+        for(int i : arr)
+            System.out.print(i + " - ");
+    }
 }
