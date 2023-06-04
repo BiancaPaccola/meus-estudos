@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: #FE8D82;
+    padding: 10px 20px 0px;
+}
+.header {
+    background-color: #ADBBDB;
+    min-height: 130px;
+    text-align: center;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.footer {
+    background-color: #465C8F;
+    min-height: 150px;
+}
+
+#logo-header{
+    width: 6.5rem;
+}
+
+.header h1 {
+    color: #2d3436;
+    font-size: 1.5rem;
+}
+
+.header h1 span {
+    color: #465C8F;
+}
+
+.menu li, a {
+    text-decoration: none;
+    list-style: none;
+    color: #2D3B5C;
+}
+
+.menu a:hover {
+    color: #171a1b;
+}
+
+.menu li {
+    margin: 50% 0;
+    font-size: 1.2rem;
+}
+
+article p, h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2d3436;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article p span {
+    margin-right: 1rem;
+}
+
+.footer {
+    text-align: center;
+    line-height: 200%;
+    color: #f1f1f1;
+}
+
+.content table {
+    margin: 1rem auto;
+    color: #23282a;
+    border: 1px solid #23282a;
+}
+
+.content table, td, th, th {
+    text-align: center ;
+    font-size: 1.5rem;
+}
+
+.content td, th, tr {
+    padding: 0.3rem;
+}
+
+.content td, th {
+    border-right: 1px solid #23282a;
+}
+
+.content table tr:nth-child(even){
+    background-color: #ADBBDB;
+}
+
+.content table th {
+    background-color: #a4a2a2;
+}
+
+.baloes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.balao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 9rem;
+    border: 1px dotted #a4a2a2;
+}
+
+.content form {
+    width: 18rem;
+    margin: 0 auto 10% auto;
+}
+
+.content form input {
+    width: 100%;
+}
+#title-contact {
+    margin: 2rem auto 1.5rem auto;
+}
+
+.content form button {
+    width: 30%;
+}
