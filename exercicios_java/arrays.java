@@ -69,20 +69,16 @@ public class Main
 	     return newArray;
 	}
 	
-	    // retorna um novo array com todos os elementos do array passados por parâmetro...
+	    // retorna um novo array com todos os elementos dos 2 arrays passados por parâmetro...
 	public static int[] exercicio6(int[] r, int[] rr) {
 	    int[] newArray = new int[r.length + rr.length];
 	    int contador = 0;
 	    
 	    for(int i : r) {
-	        newArray[contador] = i;
-	        contador++;
-	    }
+	        newArray[contador++] = i;
 	    
-	    for(int i : rr) {
-	        newArray[contador] = i;
-	        contador++;
-	    }
+	    for(int i : rr)
+	        newArray[contador++] = i;
 	        
 	    return newArray;
 	}
